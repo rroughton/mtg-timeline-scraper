@@ -12,3 +12,7 @@ export const getATagsInMonth = ($: cheerio.Root, currentMonth: cheerio.Element) 
 export const getParagraph = ($: cheerio.Root, currentMonth: cheerio.Element) => {
   return $(currentMonth).nextUntil('h3', "p")
 }
+
+export const getYears = ($: cheerio.Root) => {
+  $('h2 .mw-headline')
+}
